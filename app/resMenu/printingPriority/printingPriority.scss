@@ -1,0 +1,16 @@
+
+.priorityBox{ 
+  border: 1px solid lightgray; 
+  flex-grow: 1; 
+  ul { 
+    min-height: 100px; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+printing-priority{ 
+  display: flex; 
+  flex-direction: column; 
+  
+}

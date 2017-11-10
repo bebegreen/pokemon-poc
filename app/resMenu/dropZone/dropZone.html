@@ -1,0 +1,11 @@
+<ul class='drop-zone' dnd-list='$ctrl.data'>
+  <li 
+    ng-repeat="item in $ctrl.data" 
+    dnd-draggable='item'
+    dnd-moved="$ctrl.data.splice($index, 1)"
+  >
+    <item data='item'>
+     {{item.name}}
+    </item>
+  </li>
+</ul>

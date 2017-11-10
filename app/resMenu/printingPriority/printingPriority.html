@@ -1,0 +1,10 @@
+<h2>
+  printing priorities
+</h2>
+<div 
+  class='priorityBox' 
+  ng-repeat="priority in $ctrl.state"
+>
+  <h3>{{ priority.title }}</h3>
+  <drop-zone data='priority.data'></drop-zone>
+</div>

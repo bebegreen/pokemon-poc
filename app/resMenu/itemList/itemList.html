@@ -1,0 +1,15 @@
+
+  <div ng-if="$ctrl.state.loading">
+    Loading Menu...
+  </div>
+  
+  <div 
+    class='categorie' 
+    ng-if="$ctrl.state.catItems"
+    ng-repeat="cat in $ctrl.state.catItems" 
+  >
+    <h2>
+      {{cat.name}}
+    </h2>
+    <drop-zone data=cat.items></drop-zone>
+  </div>
