@@ -1,0 +1,22 @@
+#edit-item {
+  
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+ 
+  form { 
+    height: 90%; 
+    width: 50%; 
+    background: white; 
+    margin: 30px auto; 
+    padding: 1em; 
+    
+  } 
+
+  #modifiers { 
+    display: flex; 
+  }
+}

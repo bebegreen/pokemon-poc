@@ -3,9 +3,7 @@ export default function routes($stateProvider) {
   $stateProvider
   .state('home', {
     url: '/',
-    template: require('./homePage.html'),
-    controller: 'HomeCtrl',
-    controllerAs: '$ctrl',
+    template: require('./homePage.html')
   });
 }
 
