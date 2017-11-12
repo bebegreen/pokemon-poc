@@ -1,7 +1,7 @@
 module.exports = {
-  entry: './app/app.module.js',
+  entry: './src/components/app/app.module.js',
   output: {
-    path: './bin',
+    path: './dist',
     filename: 'app.bundle.js',
   },
   module: {
@@ -16,6 +16,10 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass']
+      }, 
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   },
